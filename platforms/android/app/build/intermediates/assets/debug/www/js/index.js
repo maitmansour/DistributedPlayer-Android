@@ -222,11 +222,9 @@ function startListeningBtnColor(){
 function initMusicList() {
   var musicList="";
   var secondes=0;
-  alert(queryUrl+"songs");
   $.ajax({url: queryUrl+"songs", success: function(result){
-    initAmplitudeList(result);
+        initAmplitudeList(result);
     $.each(result, function (key, value) {
-        alert(key);
       var sound      = document.createElement('audio');
       sound.id       = 'audio-player';
       sound.controls = 'controls';
@@ -234,7 +232,7 @@ function initMusicList() {
       sound.type     = 'audio/mpeg';
       sound.onloadedmetadata = function() {
         secondes=sound.duration
-        musicList= '<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="0">'+
+        musicList= '<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="'+key+'">'+
         '                  <span class="song-number-now-playing">'+
         '                    <span class="number">'+(key+1)+'</span>'+
         '                    <img class="now-playing" src="img/now-playing.svg"/>'+
@@ -255,14 +253,36 @@ function initMusicList() {
       };// End Of onloadmetadata
 
     });// End of Each
-
   }});//initMusicList End
 
 }
 
 function initAmplitudeList(result) {
   var songs = [];
-  var artyomCommandes=[];
+  var artyomCommandes=[{
+    indexes: ['start','Play music'],
+    action: (i) => {
+      Amplitude.play();
+    }
+  },
+  {
+    indexes: ['stop','Pause','Hold On','Stop music'],
+    action: (i) => {
+      Amplitude.pause();
+    }
+  },
+  {
+    indexes: ['next','Go on'],
+    action: (i) => {
+      Amplitude.next();
+    }
+  },
+  {
+    indexes: ['Go back','Previous'],
+    action: (i) => {
+      Amplitude.prev();
+    }
+  }];
   $.each(result, function (key, value) {
     var oneSong={ 
       "name" : value['title'],
