@@ -39,7 +39,7 @@ artyom.addCommands([
             console.log("You've said : "+ wildcard);
         }
     },
-    
+
     {
         indexes: ["play Luis Fonsi Despacito","playDespacito","Please Play Despacito"],
         action: (i) => {
@@ -180,7 +180,7 @@ function toggleRecognition(){
   }, 3000);
     startListeningBtnColor();
 }else{
-   startListeningBtnColor();  
+    stopListeningBtnColor();  
 }
 
 }
@@ -228,7 +228,7 @@ function initAmplitude() {
   });
 
     $('img[amplitude-song-info="cover_art_url"]').css('height', $('img[amplitude-song-info="cover_art_url"]').width() + 'px' );
-    
+
 }
 
 

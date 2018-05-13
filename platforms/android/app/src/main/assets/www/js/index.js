@@ -39,7 +39,7 @@ artyom.addCommands([
             console.log("You've said : "+ wildcard);
         }
     },
-    
+
     {
         indexes: ["play Luis Fonsi Despacito","playDespacito","Please Play Despacito"],
         action: (i) => {
@@ -177,10 +177,10 @@ function toggleRecognition(){
     //Active recognition for 5 sec
     setTimeout(function(){
       stopListeningBtnColor();
-  }, 3000);
+  }, 3500);
     startListeningBtnColor();
 }else{
-   startListeningBtnColor();  
+    stopListeningBtnColor();  
 }
 
 }
@@ -228,7 +228,7 @@ function initAmplitude() {
   });
 
     $('img[amplitude-song-info="cover_art_url"]').css('height', $('img[amplitude-song-info="cover_art_url"]').width() + 'px' );
-    
+
 }
 
 
