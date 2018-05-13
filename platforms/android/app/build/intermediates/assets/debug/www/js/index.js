@@ -1,6 +1,8 @@
 var recongnition=0;
 var cornerimage;
 var artyom;
+var queryUrl="http://192.168.1.59/DistributedPlayer-Client/admin/ajax.php?q=";
+var musicUrl="http://192.168.1.59/DistributedPlayer-Client/Client/music/";
 
 window.onkeydown = function(e) {
   return !(e.keyCode == 32);
@@ -15,6 +17,7 @@ function onLoad() {
 function onDeviceReady() {
     // Handle results
     artyom = new Artyom();
+    initMusicList();
     initAmplitude();
 // or add some commandsDemostrations in the normal way
 artyom.addCommands([
@@ -39,43 +42,6 @@ artyom.addCommands([
             console.log("You've said : "+ wildcard);
         }
     },
-
-    {
-        indexes: ["play Luis Fonsi Despacito","playDespacito","Please Play Despacito"],
-        action: (i) => {
-          Amplitude.playNow({
-            "name" : "Despacito",
-            "artist"  : "Luis Fonsi",
-            "album"       : "Daddy K - The Mix 11",
-            "url"       : "http://192.168.1.59/DistributedPlayer-Client/Client/music/a9be4c2a152598297288682717210977633.mp3",
-            "cover_art_url"       : "http://lastfm-img2.akamaized.net/i/u/174s/e32888ca155d4dca5193c614ae817af5.png"
-        });
-      }
-  },
-  {
-    indexes: ["play Eagles Hotel California","playHotel California","Please Play Hotel California"],
-    action: (i) => {
-      Amplitude.playNow({
-        "name" : "Hotel California",
-        "artist"  : "Eagles",
-        "album"       : "Eagles",
-        "url"       : "http://192.168.1.59/DistributedPlayer-Client/Client/music/3483e5ec152598305248291534310181978.mp3",
-        "cover_art_url"       : "http://lastfm-img2.akamaized.net/i/u/174s/ec559161068a480699519195e06af1e7.png"
-    });
-  }
-},
-{
-    indexes: ["play Adele Hello","playHello","Please Play Hello"],
-    action: (i) => {
-      Amplitude.playNow({
-        "name" : "Hello",
-        "artist"  : "Adele",
-        "album"       : "Hello",
-        "url"       : "http://192.168.1.59/DistributedPlayer-Client/Client/music/dc363817152606792094116671710036258.mp3",
-        "cover_art_url"       : "http://lastfm-img2.akamaized.net/i/u/174s/79521634782f16bf04b530761613af1f.png"
-    });
-  }
-}, 
 ]);
 
 
@@ -177,7 +143,7 @@ function toggleRecognition(){
     //Active recognition for 5 sec
     setTimeout(function(){
       stopListeningBtnColor();
-  }, 3000);
+  }, 3500);
     startListeningBtnColor();
 }else{
     stopListeningBtnColor();  
@@ -251,4 +217,81 @@ function startListeningBtnColor(){
   cornerimage.attr('src', "img/microphone-1.svg");
   recongnition=1;
   startRecognition();
+}
+
+function initMusicList() {
+  var musicList="";
+  var secondes=0;
+  alert(queryUrl+"songs");
+  $.ajax({url: queryUrl+"songs", success: function(result){
+    initAmplitudeList(result);
+    $.each(result, function (key, value) {
+        alert(key);
+      var sound      = document.createElement('audio');
+      sound.id       = 'audio-player';
+      sound.controls = 'controls';
+      sound.src      = musicUrl+value['filename']+'.mp3';
+      sound.type     = 'audio/mpeg';
+      sound.onloadedmetadata = function() {
+        secondes=sound.duration
+        musicList= '<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="0">'+
+        '                  <span class="song-number-now-playing">'+
+        '                    <span class="number">'+(key+1)+'</span>'+
+        '                    <img class="now-playing" src="img/now-playing.svg"/>'+
+        '                  </span>'+
+        ''+
+        '                  <div class="song-meta-container">'+
+        '                    <span class="song-name">'+value['title']+'</span>'+
+        '                    <span class="song-artist-album">'+value['album']+'</span>'+
+        '                  </div>'+
+        ''+
+        '                  <span class="song-duration">'+
+        '                    '+fmtMSS(secondes)+''+
+        '                  <span>'+
+        '                </div>'+
+        '';
+        $( "#list" ).append( musicList);
+        delete sound;
+      };// End Of onloadmetadata
+
+    });// End of Each
+
+  }});//initMusicList End
+
+}
+
+function initAmplitudeList(result) {
+  var songs = [];
+  var artyomCommandes=[];
+  $.each(result, function (key, value) {
+    var oneSong={ 
+      "name" : value['title'],
+      "artist"  : value['artist'],
+      "album"       : value['album'],
+      "url"       : musicUrl+value['filename']+'.mp3',
+      "cover_art_url"       : value['image']
+    };
+
+    songs.push(oneSong);
+    artyomCommandes.push({
+    indexes: ["play "+value['artist']+" "+value['title'],"play "+value['title'],"Please Play "+value['title'],"I want to listen to "+value['title']],
+    action: (i) => {
+      Amplitude.playNow(oneSong);
+  }
+});
+
+    artyom.addCommands(artyomCommandes);
+
+
+  });
+  Amplitude.init({
+    "bindings": {
+      37: 'prev',
+      39: 'next',
+      32: 'play_pause'
+    },
+    "songs": songs
+  });
+
+
 }
