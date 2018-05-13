@@ -1,18 +1,63 @@
-<script type="text/javascript">
-var recognition;
-document.addEventListener('deviceready', onDeviceReady, false);
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Device Ready Example</title>
 
-function onDeviceReady() {
-    recognition = new SpeechRecognition();
-    recognition.onresult = function(event) {
-        if (event.results.length > 0) {
-            q.value = event.results[0][0].transcript;
-            q.form.submit();
-        }
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    // Wait for device API libraries to load
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
     }
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        // Handle results
+function startRecognition(){
+    window.plugins.speechRecognition.startListening(function(result){
+        // Show results in the console
+        console.log(result);
+    }, function(err){
+        console.error(err);
+    }, {
+        language: "en-US",
+        showPopup: true
+    });
 }
-</script>
-<form action="http://www.example.com/search">
-    <input type="search" id="q" name="q" size=60>
-    <input type="button" value="Click to Speak" onclick="recognition.start()">
-</form>
+
+// Verify if recognition is available
+window.plugins.speechRecognition.isRecognitionAvailable(function(available){
+    if(!available){
+        console.log("Sorry, not available");
+    }
+
+    // Check if has permission to use the microphone
+    window.plugins.speechRecognition.hasPermission(function (isGranted){
+        if(isGranted){
+            startRecognition();
+        }else{
+            // Request the permission
+            window.plugins.speechRecognition.requestPermission(function (){
+                // Request accepted, start recognition
+                startRecognition();
+            }, function (err){
+                console.log(err);
+            });
+        }
+    }, function(err){
+        console.log(err);
+    });
+}, function(err){
+    console.log(err);
+});
+
+    }
+
+    </script>
+</head>
+<body onload="onLoad()">
+</body>
+</html>
