@@ -6,7 +6,7 @@
     density="xxhdpi"
     format="10"
     plugin-version="3.0.0"
-    timestamp="1526237285054"
+    timestamp="1526239448977"
     token="5719028585646080398"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -79,7 +79,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1526237285054"
+        timestamp="1526239448977"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/var/www/html/DistributedPlayer-Android/platforms/android/app/build/outputs/apk/debug/app-debug.apk"
