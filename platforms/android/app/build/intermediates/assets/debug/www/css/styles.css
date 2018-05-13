@@ -1,7 +1,15 @@
 body{
   background-color: rgba(0,0,0,.8);
 }
-
+.cornerimage {
+  border: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100px;
+  padding-top: 10px;
+  fill:#000;
+}
 div#flat-black-player-container {
   position: relative;
   max-width: 100%;
@@ -176,7 +184,7 @@ div#flat-black-player-container div.player-header {
   text-align: center;
   height: 55px;
   position: relative;
- /* margin-top: 40px;*/
+  /* margin-top: 40px;*/
   cursor: pointer;
   color: white;
   font-family: "Lato", sans-serif;
@@ -299,6 +307,7 @@ div#flat-black-player-container div#player-bottom {
   background-color: #192029;
   padding-left: 25px;
   padding-right: 25px;
+  position: relative;
 }
 div#flat-black-player-container div#player-bottom div#control-container {
   height: 85px;
@@ -417,8 +426,8 @@ div#flat-black-player-container div#player-bottom div#volume-container {
   /*
    IE 11
    */
-}
-div#flat-black-player-container div#player-bottom div#volume-container img {
+ }
+ div#flat-black-player-container div#player-bottom div#volume-container img {
   display: block;
   float: left;
   margin-top: -9px;
