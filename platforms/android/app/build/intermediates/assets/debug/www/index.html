@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Stream-IT Application</title>
-
+    <title>Stream -IT Application</title>
+    <meta name=viewport content="width=device-width, initial-scale=1">
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+
+    <!-- Include Resource Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="resources/css/foundation.min.css"/>
+
+    <!-- Include font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i" rel="stylesheet">
+
+    <!--
+      Include Resource Javascript
+
+      NOTE: These are for handling things outside of the scope of AmplitudeJS
+    -->
+    <script type="text/javascript" src="resources/js/jquery.js"></script>
+    <script type="text/javascript" src="resources/js/foundation.min.js"></script>
+
+    <!-- Include Amplitude JS -->
+    <script type="text/javascript" src="dist/amplitude.js"></script>
+
+    <!-- Include Artyom JS -->
+    <script ype="text/javascript" src="resources/artyom/artyom.window.min.js"></script>
+
+    <!--
+      Include UX functions JS
+
+      NOTE: These are for handling things outside of the scope of AmplitudeJS
+    -->
+
     <script type="text/javascript" charset="utf-8" src="js/index.js"></script>
-    <script type="text/javascript" charset="utf-8" src="js/artyom.window.min.js"></script>
+
+    <style type="text/css">
+    .cornerimage {
+      border: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100px;
+      padding-top: 10px;
+      fill:#000;
+    }
+  </style>
+    <!-- Include Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
 
 </head>
 <body onload="onLoad()">

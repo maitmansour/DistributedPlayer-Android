@@ -33,14 +33,6 @@ artyom.addCommands([
             console.log("You've said : "+ wildcard);
         }
     },
-    {
-        indexes: ['shut down yourself'],
-        action: (i,wildcard) => {
-            artyom.fatality().then(() => {
-                console.log("Artyom succesfully stopped");
-            });
-        }
-    },
 ]);
 
 
