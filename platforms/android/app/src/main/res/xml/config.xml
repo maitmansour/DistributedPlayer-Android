@@ -21,4 +21,7 @@
     <allow-intent href="geo:*" />
     <allow-intent href="market:*" />
     <preference name="loglevel" value="DEBUG" />
+    <feature name="SpeechRecognition">
+        <param name="android-package" value="com.pbakondy.SpeechRecognition" />
+    </feature>
 </widget>

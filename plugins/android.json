@@ -9,6 +9,9 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.numidea.streamit"
+    },
+    "cordova-plugin-speechrecognition": {
+      "PACKAGE_NAME": "com.numidea.streamit"
     }
   },
   "dependent_plugins": {}
