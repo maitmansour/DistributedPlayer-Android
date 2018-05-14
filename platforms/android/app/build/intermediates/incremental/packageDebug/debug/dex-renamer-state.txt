@@ -1,4 +1,4 @@
-#Sun May 13 23:48:19 CEST 2018
+#Tue May 15 00:52:49 CEST 2018
 renamed.5=classes6.dex
 renamed.4=classes5.dex
 renamed.3=classes4.dex
@@ -7,13 +7,13 @@ renamed.1=classes2.dex
 renamed.0=classes.dex
 base.5=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/transforms/dexMerger/debug/15
 base.4=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/transforms/dexMerger/debug/12
-base.3=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/transforms/dexMerger/debug/17
-base.2=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/transforms/dexMerger/debug/14
+base.3=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/transforms/dexMerger/debug/14
+base.2=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/transforms/dexMerger/debug/11
 base.1=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/transforms/dexMerger/debug/16
 base.0=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/transforms/dexMerger/debug/13
 file.5=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/transforms/dexMerger/debug/15/classes.dex
 file.4=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/transforms/dexMerger/debug/12/classes.dex
-file.3=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/transforms/dexMerger/debug/17/classes.dex
-file.2=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/transforms/dexMerger/debug/14/classes.dex
+file.3=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/transforms/dexMerger/debug/14/classes.dex
+file.2=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/transforms/dexMerger/debug/11/classes.dex
 file.1=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/transforms/dexMerger/debug/16/classes.dex
 file.0=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/transforms/dexMerger/debug/13/classes.dex

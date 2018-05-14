@@ -10,6 +10,15 @@ body{
   padding-top: 10px;
   fill:#000;
 }
+.cornerimageLive {
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  padding
+  padding-top: 10px;
+}
 div#flat-black-player-container {
   position: relative;
   max-width: 100%;

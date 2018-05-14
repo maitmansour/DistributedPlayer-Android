@@ -4,6 +4,42 @@
             "outputFile": "/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
+                    "source": "/var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/res/values/dimens.xml",
+                    "from": {
+                        "startLines": "8,7,9,3,4,14,15,13,17,16,12,6,5",
+                        "startColumns": "2,2,2,2,2,2,2,2,2,2,2,2,2",
+                        "startOffsets": "397,341,453,86,144,685,750,610,886,816,551,270,201",
+                        "endColumns": "55,55,54,57,56,64,65,74,66,69,58,70,68",
+                        "endOffsets": "450,394,505,141,198,747,813,682,950,883,607,338,267"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,113,171,228,288,347,414,482,559,628,700,761,834",
+                        "endColumns": "57,57,56,59,58,66,67,76,68,71,60,72,70",
+                        "endOffsets": "108,166,223,283,342,409,477,554,623,695,756,829,900"
+                    }
+                },
+                {
+                    "source": "/var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/res/values/style.xml",
+                    "from": {
+                        "startLines": "14,33,30,27,23,3",
+                        "startColumns": "2,2,2,2,2,2",
+                        "startOffsets": "535,1314,1226,1138,998,92",
+                        "endLines": "21,34,31,28,25,11",
+                        "endColumns": "10,10,10,10,10,10",
+                        "endOffsets": "994,1402,1310,1222,1134,495"
+                    },
+                    "to": {
+                        "startLines": "18,26,28,30,32,35",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "1075,1539,1632,1721,1810,1951",
+                        "endLines": "25,27,29,31,34,43",
+                        "endColumns": "10,10,10,10,10,10",
+                        "endOffsets": "1534,1627,1716,1805,1946,2354"
+                    }
+                },
+                {
                     "source": "/var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/res/values/strings.xml",
                     "from": {
                         "startLines": "4,2,3",
@@ -13,11 +49,11 @@
                         "endOffsets": "220,97,156"
                     },
                     "to": {
-                        "startLines": "2,3,4",
+                        "startLines": "15,16,17",
                         "startColumns": "4,4,4",
-                        "startOffsets": "55,119,166",
+                        "startOffsets": "905,969,1016",
                         "endColumns": "63,46,58",
-                        "endOffsets": "114,161,220"
+                        "endOffsets": "964,1011,1070"
                     }
                 }
             ]

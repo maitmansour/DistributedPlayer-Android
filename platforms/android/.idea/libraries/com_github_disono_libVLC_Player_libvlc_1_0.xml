@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.github.disono.libVLC-Player:libvlc-1.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/libvlc-1.0.aar/17bb2680a4cf1940058f43e982ee744d/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/libvlc-1.0.aar/17bb2680a4cf1940058f43e982ee744d/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

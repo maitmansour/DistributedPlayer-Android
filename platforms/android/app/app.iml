@@ -115,6 +115,9 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 26 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="com.android.support:support-annotations:27.0.2@jar" level="project" />
+    <orderEntry type="library" name="com.github.disono.libVLC-Player:libvlc-1.0" level="project" />
+    <orderEntry type="library" name="com.github.disono.libVLC-Player:disonoVLC-1.0" level="project" />
     <orderEntry type="module" module-name="CordovaLib" />
   </component>
 </module>

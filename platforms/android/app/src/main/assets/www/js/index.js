@@ -18,7 +18,6 @@ function onDeviceReady() {
     // Handle results
     artyom = new Artyom();
     initAmplitude();
-
     // Verify if recognition is available
     window.plugins.speechRecognition.isRecognitionAvailable(function(available) {
         if (!available) {
@@ -104,7 +103,6 @@ function toggleRecognition() {
     }
 
 }
-
 
 function initAmplitude() {
     initMusicList();
@@ -210,6 +208,15 @@ function initMusicList() {
             delete sound;
         }
     }); //initMusicList End
+
+}
+
+function streaming(){
+libVLCPlayer.play('rtsp://@192.168.1.59:5555/demo',{
+                                                           autoPlay: true,
+                                                           hideControls: true
+                                                       });
+
 
 }
 

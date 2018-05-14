@@ -21,6 +21,7 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
+        android:allowBackup="true"
         android:debuggable="true"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/icon"
@@ -40,6 +41,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.hutchind.cordova.plugins.streamingmedia.SimpleAudioStream"
+            android:configChanges="orientation|screenSize"
+            android:label="Simple Audio Stream" />
+        <activity
+            android:name="com.hutchind.cordova.plugins.streamingmedia.SimpleVideoStream"
+            android:configChanges="orientation|screenSize"
+            android:label="Simple Video Stream" />
+        <activity android:name="com.webmons.disono.libVLC.VLCActivity" />
     </application>
 
 </manifest>

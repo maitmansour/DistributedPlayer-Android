@@ -1,13 +1,15 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:2:1-15:12
-INJECTED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:2:1-15:12
-INJECTED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:2:1-15:12
-INJECTED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:2:1-15:12
+ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:2:1-18:12
+INJECTED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:2:1-18:12
+INJECTED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:2:1-18:12
+INJECTED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:2:1-18:12
+MERGED from [com.github.disono.libVLC-Player:disonoVLC:1.0] /home/mohamed/.gradle/caches/transforms-1/files-1.1/disonoVLC-1.0.aar/8c913cd4c18bcf01e6c8ab561a650358/AndroidManifest.xml:2:1-16:12
+MERGED from [com.github.disono.libVLC-Player:libvlc:1.0] /home/mohamed/.gradle/caches/transforms-1/files-1.1/libvlc-1.0.aar/17bb2680a4cf1940058f43e982ee744d/AndroidManifest.xml:2:1-12:12
 MERGED from [:CordovaLib] /var/www/html/DistributedPlayer-Android/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:20:1-27:12
-INJECTED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:2:1-15:12
-INJECTED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:2:1-15:12
-INJECTED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:2:1-15:12
+INJECTED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:2:1-18:12
+INJECTED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:2:1-18:12
+INJECTED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:2:1-18:12
 	package
 		ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:2:102-132
 		INJECTED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml
@@ -43,13 +45,17 @@ ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/mai
 	android:name
 		ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:4:22-64
 application
-ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:5:5-12:19
+ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:5:5-15:19
+MERGED from [com.github.disono.libVLC-Player:disonoVLC:1.0] /home/mohamed/.gradle/caches/transforms-1/files-1.1/disonoVLC-1.0.aar/8c913cd4c18bcf01e6c8ab561a650358/AndroidManifest.xml:11:5-14:38
+MERGED from [com.github.disono.libVLC-Player:disonoVLC:1.0] /home/mohamed/.gradle/caches/transforms-1/files-1.1/disonoVLC-1.0.aar/8c913cd4c18bcf01e6c8ab561a650358/AndroidManifest.xml:11:5-14:38
 	android:supportsRtl
 		ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:5:114-140
 	android:label
 		ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:5:81-113
 	android:hardwareAccelerated
 		ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:5:18-52
+	android:allowBackup
+		ADDED from [com.github.disono.libVLC-Player:disonoVLC:1.0] /home/mohamed/.gradle/caches/transforms-1/files-1.1/disonoVLC-1.0.aar/8c913cd4c18bcf01e6c8ab561a650358/AndroidManifest.xml:12:9-35
 	android:icon
 		ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:5:53-80
 activity#com.numidea.streamit.MainActivity
@@ -78,15 +84,39 @@ category#android.intent.category.LAUNCHER
 ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:9:17-77
 	android:name
 		ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:9:27-74
+activity#com.hutchind.cordova.plugins.streamingmedia.SimpleAudioStream
+ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:12:9-181
+	android:label
+		ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:12:66-101
+	android:configChanges
+		ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:12:19-65
+	android:name
+		ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:12:102-178
+activity#com.hutchind.cordova.plugins.streamingmedia.SimpleVideoStream
+ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:13:9-181
+	android:label
+		ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:13:66-101
+	android:configChanges
+		ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:13:19-65
+	android:name
+		ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:13:102-178
+activity#com.webmons.disono.libVLC.VLCActivity
+ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:14:9-74
+	android:name
+		ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:14:19-71
 uses-sdk
-ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:13:5-74
+ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:16:5-74
+MERGED from [com.github.disono.libVLC-Player:disonoVLC:1.0] /home/mohamed/.gradle/caches/transforms-1/files-1.1/disonoVLC-1.0.aar/8c913cd4c18bcf01e6c8ab561a650358/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.disono.libVLC-Player:disonoVLC:1.0] /home/mohamed/.gradle/caches/transforms-1/files-1.1/disonoVLC-1.0.aar/8c913cd4c18bcf01e6c8ab561a650358/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.disono.libVLC-Player:libvlc:1.0] /home/mohamed/.gradle/caches/transforms-1/files-1.1/libvlc-1.0.aar/17bb2680a4cf1940058f43e982ee744d/AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.disono.libVLC-Player:libvlc:1.0] /home/mohamed/.gradle/caches/transforms-1/files-1.1/libvlc-1.0.aar/17bb2680a4cf1940058f43e982ee744d/AndroidManifest.xml:8:5-10:41
 MERGED from [:CordovaLib] /var/www/html/DistributedPlayer-Android/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:5-44
 MERGED from [:CordovaLib] /var/www/html/DistributedPlayer-Android/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:5-44
 	android:targetSdkVersion
-		ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:13:42-71
+		ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:16:42-71
 	android:minSdkVersion
-		ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:13:15-41
+		ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:16:15-41
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:14:5-71
+ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:17:5-71
 	android:name
-		ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:14:22-68
+		ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:17:22-68
