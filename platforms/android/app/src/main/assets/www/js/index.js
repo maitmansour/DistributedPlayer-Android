@@ -176,14 +176,14 @@ $(window).on('resize', function() {
 
 
 function stopListeningBtnColor() {
-    cornerimage.attr('src', "img/microphone-0.svg");
+    cornerimage.attr('src', "img/microphone-0.png");
     recongnition = 0;
 }
 
 
 function startListeningBtnColor() {
 
-    cornerimage.attr('src', "img/microphone-1.svg");
+    cornerimage.attr('src', "img/microphone-1.png");
     recongnition = 1;
     startRecognition();
 }

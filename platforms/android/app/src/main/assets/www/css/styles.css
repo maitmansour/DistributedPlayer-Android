@@ -6,7 +6,7 @@ body{
   position: absolute;
   top: 0;
   right: 0;
-  height: 100px;
+  height: 75px;
   padding-top: 10px;
   fill:#000;
 }
@@ -15,8 +15,7 @@ body{
   position: absolute;
   top: 0;
   left: 0;
-  height: 100px;
-  padding
+  height: 75px;
   padding-top: 10px;
 }
 .cornerimageRadio {
@@ -24,8 +23,7 @@ body{
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 100px;
-  padding
+  height: 75px;
   padding-bottom: 10px;
 }
 div#flat-black-player-container {
