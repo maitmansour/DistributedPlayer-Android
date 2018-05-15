@@ -1,9 +1,9 @@
 var recongnition = 0;
 var cornerimage;
 var artyom;
-var queryUrl = "http://192.168.1.59/DistributedPlayer-Client/admin/ajax.php?q=";
-var musicUrl = "http://192.168.1.59/DistributedPlayer-Client/Client/music/";
-
+var currentIP="192.168.43.130";
+var queryUrl= "http://"+currentIP+"/DistributedPlayer-Client/admin/ajax.php?q=";
+var musicUrl= "http://"+currentIP+"/DistributedPlayer-Client/Client/music/";
 window.onkeydown = function(e) {
     return !(e.keyCode == 32);
 };
@@ -13,6 +13,24 @@ function onLoad() {
     document.addEventListener("deviceready", onDeviceReady, false);
 }
 
+
+function askforIP(){
+console.log("inside ASK FOR IP");
+currentIP = window.prompt("Insert Server IP", "192.168.");
+if(!validateIPaddress(CurrentIP)){
+askforIP();
+}
+console.log("FINISH ASK FOR IP");
+
+flag=false;
+}
+function validateIPaddress(ipaddress) {
+  if (/^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(ipaddress)) {
+    return (true)
+  }
+  alert("You have entered an invalid IP address!")
+  return (false)
+}
 // device APIs are available
 function onDeviceReady() {
     // Handle results
@@ -211,8 +229,19 @@ function initMusicList() {
 
 }
 
-function streaming(){
-libVLCPlayer.play('rtsp://@192.168.1.59:5555/demo',{
+function radio(){
+Amplitude.pause();
+libVLCPlayer.play('rtsp://@'+currentIP+':5551/radio',{
+                                                           autoPlay: true,
+                                                           hideControls: true
+                                                       });
+
+
+}
+
+function television(){
+Amplitude.pause();
+libVLCPlayer.play('rtsp://@'+currentIP+':5550/tele',{
                                                            autoPlay: true,
                                                            hideControls: true
                                                        });
