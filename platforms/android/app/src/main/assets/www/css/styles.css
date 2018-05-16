@@ -1,31 +1,28 @@
 body{
   background-color: rgba(0,0,0,.8);
 }
+.cornerimage, .cornerimageRadio, .cornerimageTele{
+  -webkit-filter: drop-shadow(7px 7px 5px #222);
+  filter: drop-shadow(7px 7px 5px #222);
+  border: 0;
+  position: absolute;
+  height: 74px;
+  }
+
 .cornerimage {
-  border: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 75px;
-  padding-top: 10px;
-  fill:#000;
-}
+  bottom: 10px;
+  left:50%;
+  margin-left: -37px;
+ }
 .cornerimageTele {
-  border: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 75px;
-  padding-top: 10px;
+  top: 10px;
+  left: 10px;
 }
 .cornerimageRadio {
-  border: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 75px;
-  padding-bottom: 10px;
+  top: 10px;
+  right: 10px;
 }
+
 div#flat-black-player-container {
   position: relative;
   max-width: 100%;

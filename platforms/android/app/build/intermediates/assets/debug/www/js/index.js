@@ -1,7 +1,7 @@
 var recongnition = 0;
 var cornerimage;
 var artyom;
-var currentIP="192.168.43.130";
+var currentIP="192.168.1.59";
 var queryUrl= "http://"+currentIP+"/DistributedPlayer-Client/admin/ajax.php?q=";
 var musicUrl= "http://"+currentIP+"/DistributedPlayer-Client/Client/music/";
 window.onkeydown = function(e) {
@@ -264,12 +264,6 @@ function initAmplitudeList(result) {
             }
         },
         {
-            indexes: ['up up', 'up'],
-            action: (i) => {
-                Amplitude.volumeUp();
-            }
-        },
-        {
             indexes: ['next', 'Go on', 'next Song'],
             action: (i) => {
                 Amplitude.next();
@@ -293,7 +287,7 @@ function initAmplitudeList(result) {
 
         songs.push(oneSong);
         artyomCommandes.push({
-            indexes: ["play " + value['artist'] + " " + value['title'], "play " + value['title'], "Please Play " + value['title'], "I want to listen to " + value['title']],
+            indexes: ["play " + value['artist'] + " " + value['title'], "play " + value['title'], "Please Play " + value['title'], "I want to listen to " + value['title'], value['title']+" "+ value['artist']],
             action: (i) => {
                 Amplitude.playNow(oneSong);
             }
