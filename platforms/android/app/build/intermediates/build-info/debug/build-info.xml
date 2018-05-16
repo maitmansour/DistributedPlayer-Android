@@ -6,7 +6,7 @@
     density="xxhdpi"
     format="10"
     plugin-version="3.0.0"
-    timestamp="1526493878593"
+    timestamp="1526498619248"
     token="5719028585646080398"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -29,7 +29,7 @@
 
     <build
         build-mode="FULL"
-        timestamp="1526491427472"
+        timestamp="1526496372803"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/var/www/html/DistributedPlayer-Android/platforms/android/app/build/outputs/apk/debug/app-debug.apk"
@@ -70,7 +70,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1526493878593"
+        timestamp="1526498619248"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/var/www/html/DistributedPlayer-Android/platforms/android/app/build/outputs/apk/debug/app-debug.apk"

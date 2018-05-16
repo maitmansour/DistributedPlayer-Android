@@ -27,4 +27,5 @@
     <plugin name="cordova-plugin-speechrecognition" spec="^1.2.0" />
     <plugin name="com.hutchind.cordova.plugins.streamingmedia" spec="~0.1.4" />
     <plugin name="cordova-plugin-libvlc" spec="https://github.com/disono/cordova-plugin-libVLC" />
+    <plugin name="cordova-plugin-tts" spec="^0.2.3" />
 </widget>

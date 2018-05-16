@@ -18,6 +18,9 @@
     },
     "cordova-plugin-libvlc": {
       "PACKAGE_NAME": "com.numidea.streamit"
+    },
+    "cordova-plugin-tts": {
+      "PACKAGE_NAME": "com.numidea.streamit"
     }
   },
   "dependent_plugins": {}

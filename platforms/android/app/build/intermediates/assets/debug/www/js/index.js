@@ -70,9 +70,11 @@ function startRecognition() {
             if (artyom.simulateInstruction(option)) {
                 console.log("Matched : " + option, result);
                 return;
-            }
+            }else{
+                    talkNow("Sorry i didn't catch you, you can ask me questions like What time is it, or ask me for playing a song, for example Play Adele Hello !");
+                 return;
+             }
         });
-
         console.log(result);
     }, function(err) {
         console.error(err);
@@ -245,9 +247,15 @@ libVLCPlayer.play('rtsp://@'+currentIP+':5550/tele',{
                                                            autoPlay: true,
                                                            hideControls: true
                                                        });
-
-
 }
+
+function talkNow(textToSay){
+                    TTS.speak({text:textToSay,rate:0.8}).then(function () {
+                       // alert('success');
+                    }, function (reason) {
+                        //alert(reason);
+                    });
+ }
 
 function initAmplitudeList(result) {
     var songs = [];
@@ -267,6 +275,73 @@ function initAmplitudeList(result) {
             indexes: ['next', 'Go on', 'next Song'],
             action: (i) => {
                 Amplitude.next();
+            }
+        },
+        {
+                     indexes: ['Hello', 'Hi'],
+                     action: (i) => {
+                         talkNow("Hi, How are you ?");
+                     }
+        }
+,
+        {
+                     indexes: ['How are you ?', "What's up ?"],
+                     action: (i) => {
+                         talkNow("I'm fine thanks what about you ?");
+                     }
+        },
+        {
+                     indexes: ["I'm fine !", 'Fine'],
+                     action: (i) => {
+                         talkNow("Great ! i'm happy to know that !");
+                     }
+        },
+        {
+            indexes: ["What's your name ?", 'do you have a name ?', 'your name'],
+            action: (i) => {
+                         talkNow("My name is Mrimo !");
+            }
+        },
+        {
+            indexes: [ "what's time","current time"],
+            action: (i) => {
+            var currentDate = new Date();
+
+                         talkNow("Time now is !"+ currentDate.getHours() + ":"+ currentDate.getMinutes());
+            }
+        },
+        {
+            indexes: ["who made you","who is your maker","your maker"],
+            action: (i) => {
+            var currentDate = new Date();
+
+                         talkNow("My maker is Mohamed AIT MANSOUR, A very motivated and ambitious programmer !");
+            }
+        },
+        {
+            indexes: ["Are you tired","Tired","do you get tired ?"],
+            action: (i) => {
+            var currentDate = new Date();
+
+                         talkNow("i'm just a program, i don't get tired !");
+            }
+        },
+        {
+            indexes: ["where do you live"],
+            action: (i) => {
+                         talkNow("i live inside your phone, keep it always charged if you liked me !");
+            }
+        },
+        {
+            indexes: ["what's today date", "what is today", 'current date'],
+            action: (i) => {
+                        var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+                        var months = ["January", "February", "March", "April", "May", "June",
+                                       "July", "August", "September", "October", "November", "December"
+                                     ];
+                        var currentDate = new Date();
+
+                         talkNow("Today is "+ days[currentDate.getDay()] + ", the "+ currentDate.getDate()+"'s of  "+months[currentDate.getMonth()]+" "+currentDate.getYear());
             }
         },
         {
@@ -308,3 +383,8 @@ function initAmplitudeList(result) {
 
 
 }
+
+            function exitFromApp()
+             {
+                navigator.app.exitApp();
+             }

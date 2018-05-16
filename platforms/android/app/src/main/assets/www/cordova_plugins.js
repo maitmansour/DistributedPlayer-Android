@@ -23,6 +23,14 @@ module.exports = [
     "clobbers": [
       "window.libVLCPlayer"
     ]
+  },
+  {
+    "id": "cordova-plugin-tts.tts",
+    "file": "plugins/cordova-plugin-tts/www/tts.js",
+    "pluginId": "cordova-plugin-tts",
+    "clobbers": [
+      "TTS"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -31,7 +39,8 @@ module.exports.metadata =
   "cordova-plugin-whitelist": "1.3.3",
   "cordova-plugin-speechrecognition": "1.1.2",
   "com.hutchind.cordova.plugins.streamingmedia": "0.1.4",
-  "cordova-plugin-libvlc": "0.1.3"
+  "cordova-plugin-libvlc": "0.1.3",
+  "cordova-plugin-tts": "0.2.3"
 };
 // BOTTOM OF METADATA
 });

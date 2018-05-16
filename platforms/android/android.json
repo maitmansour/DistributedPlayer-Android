@@ -56,6 +56,16 @@
             }
           ]
         }
+      },
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"TTS\"><param name=\"android-package\" value=\"com.wordsbaking.cordova.tts.TTS\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
       }
     }
   },
@@ -70,6 +80,9 @@
       "PACKAGE_NAME": "com.numidea.streamit"
     },
     "cordova-plugin-libvlc": {
+      "PACKAGE_NAME": "com.numidea.streamit"
+    },
+    "cordova-plugin-tts": {
       "PACKAGE_NAME": "com.numidea.streamit"
     }
   },
@@ -98,12 +111,21 @@
       "clobbers": [
         "window.libVLCPlayer"
       ]
+    },
+    {
+      "id": "cordova-plugin-tts.tts",
+      "file": "plugins/cordova-plugin-tts/www/tts.js",
+      "pluginId": "cordova-plugin-tts",
+      "clobbers": [
+        "TTS"
+      ]
     }
   ],
   "plugin_metadata": {
     "cordova-plugin-whitelist": "1.3.3",
     "cordova-plugin-speechrecognition": "1.1.2",
     "com.hutchind.cordova.plugins.streamingmedia": "0.1.4",
-    "cordova-plugin-libvlc": "0.1.3"
+    "cordova-plugin-libvlc": "0.1.3",
+    "cordova-plugin-tts": "0.2.3"
   }
 }
