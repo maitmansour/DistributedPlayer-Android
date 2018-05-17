@@ -28,4 +28,5 @@
     <plugin name="com.hutchind.cordova.plugins.streamingmedia" spec="~0.1.4" />
     <plugin name="cordova-plugin-libvlc" spec="https://github.com/disono/cordova-plugin-libVLC" />
     <plugin name="cordova-plugin-tts" spec="^0.2.3" />
+    <plugin name="cordova-plugin-network-information" spec="^2.0.1" />
 </widget>

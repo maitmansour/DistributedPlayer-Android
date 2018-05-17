@@ -1,15 +1,15 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:2:1-18:12
-INJECTED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:2:1-18:12
-INJECTED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:2:1-18:12
-INJECTED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:2:1-18:12
+ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
+INJECTED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
+INJECTED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
+INJECTED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
 MERGED from [com.github.disono.libVLC-Player:disonoVLC:1.0] /home/mohamed/.gradle/caches/transforms-1/files-1.1/disonoVLC-1.0.aar/8c913cd4c18bcf01e6c8ab561a650358/AndroidManifest.xml:2:1-16:12
 MERGED from [com.github.disono.libVLC-Player:libvlc:1.0] /home/mohamed/.gradle/caches/transforms-1/files-1.1/libvlc-1.0.aar/17bb2680a4cf1940058f43e982ee744d/AndroidManifest.xml:2:1-12:12
 MERGED from [:CordovaLib] /var/www/html/DistributedPlayer-Android/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:20:1-27:12
-INJECTED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:2:1-18:12
-INJECTED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:2:1-18:12
-INJECTED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:2:1-18:12
+INJECTED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
+INJECTED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
+INJECTED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
 	package
 		ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:2:102-132
 		INJECTED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml
@@ -120,3 +120,7 @@ uses-permission#android.permission.RECORD_AUDIO
 ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:17:5-71
 	android:name
 		ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:17:22-68
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:18:5-79
+	android:name
+		ADDED from /var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/AndroidManifest.xml:18:22-76

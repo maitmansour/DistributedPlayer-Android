@@ -21,6 +21,9 @@
     },
     "cordova-plugin-tts": {
       "PACKAGE_NAME": "com.numidea.streamit"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.numidea.streamit"
     }
   },
   "dependent_plugins": {}

@@ -1,4 +1,4 @@
-#Thu May 17 19:21:04 CEST 2018
-base.0=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/transforms/dexMerger/debug/44
+#Thu May 17 21:04:40 CEST 2018
+base.0=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/transforms/dexMerger/debug/63
 renamed.0=classes.dex
-file.0=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/transforms/dexMerger/debug/44/classes.dex
+file.0=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/transforms/dexMerger/debug/63/classes.dex

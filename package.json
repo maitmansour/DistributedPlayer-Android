@@ -12,6 +12,7 @@
   "dependencies": {
     "cordova-android": "^7.0.0",
     "cordova-plugin-libvlc": "git+https://github.com/disono/cordova-plugin-libVLC.git",
+    "cordova-plugin-network-information": "^2.0.1",
     "cordova-plugin-speechrecognition": "^1.2.0",
     "cordova-plugin-streaming-media": "^1.0.2",
     "cordova-plugin-tts": "^0.2.3",
@@ -23,7 +24,8 @@
       "cordova-plugin-speechrecognition": {},
       "com.hutchind.cordova.plugins.streamingmedia": {},
       "cordova-plugin-libvlc": {},
-      "cordova-plugin-tts": {}
+      "cordova-plugin-tts": {},
+      "cordova-plugin-network-information": {}
     },
     "platforms": [
       "android"

@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Error page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
 
 
     <link rel="stylesheet" href="css/offline.css">
@@ -25,7 +26,7 @@
     </div>
 
     <div class="content">
-        <h1>Network Error.</h1>
+        <h1>Please connect to the internet !</h1>
     </div>
 
 </div>
@@ -33,7 +34,12 @@
 
 
 <script  src="js/offline.js"></script>
-
+<script type="text/javascript">
+document.addEventListener("online", restartApplication, false);
+function restartApplication() {
+  window.location = "file:///android_asset/www/index.html";
+}
+</script>
 
 
 

@@ -21,7 +21,7 @@ function getServer() {
             console.log(result);
             currentIP=result;
             if(currentIP=="0"){
-            onOffline();
+            onDownTime();
             }else{
                         queryUrl="http://"+currentIP+"/DistributedPlayer-Client/admin/ajax.php?q=";
                         musicUrl= "http://"+currentIP+"/DistributedPlayer-Client/Client/music/";
@@ -33,7 +33,10 @@ function getServer() {
 }
 
 function onOffline(){
-window.open('file:///android_asset/www/offline.html')
+window.location="file:///android_asset/www/offline.html";
+}
+function onDownTime(){
+window.location="file:///android_asset/www/downtime.html";
 }
 // device APIs are available
 function onDeviceReady() {
@@ -77,7 +80,7 @@ function startRecognition() {
                 console.log("Matched : " + option, result);
                 return;
             }else{
-                    talkNow("Sorry i didn't catch you, you can ask me questions like What time is it, or ask me for playing a song, for example Play Adele Hello !");
+                    talkNow("Sorry i didn't catch you !");
                  return;
              }
         });
