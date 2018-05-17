@@ -1,9 +1,10 @@
 var recongnition = 0;
 var cornerimage;
 var artyom;
-var currentIP="192.168.1.59";
-var queryUrl= "http://"+currentIP+"/DistributedPlayer-Client/admin/ajax.php?q=";
-var musicUrl= "http://"+currentIP+"/DistributedPlayer-Client/Client/music/";
+var currentIP;
+var metaserverAddress="http://192.168.1.59/metaserver/web/index.php/connections/getserver";
+var queryUrl;
+var musicUrl;
 window.onkeydown = function(e) {
     return !(e.keyCode == 32);
 };
@@ -13,29 +14,34 @@ function onLoad() {
     document.addEventListener("deviceready", onDeviceReady, false);
 }
 
+function getServer() {
+    $.ajax({
+        url: metaserverAddress,
+        success: function(result) {
+            console.log(result);
+            currentIP=result;
+            if(currentIP=="0"){
+            onOffline();
+            }else{
+                        queryUrl="http://"+currentIP+"/DistributedPlayer-Client/admin/ajax.php?q=";
+                        musicUrl= "http://"+currentIP+"/DistributedPlayer-Client/Client/music/";
 
-function askforIP(){
-console.log("inside ASK FOR IP");
-currentIP = window.prompt("Insert Server IP", "192.168.");
-if(!validateIPaddress(CurrentIP)){
-askforIP();
+                            initAmplitude();
+            }
+        }
+    });
 }
-console.log("FINISH ASK FOR IP");
 
-flag=false;
-}
-function validateIPaddress(ipaddress) {
-  if (/^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(ipaddress)) {
-    return (true)
-  }
-  alert("You have entered an invalid IP address!")
-  return (false)
+function onOffline(){
+window.open('file:///android_asset/www/offline.html')
 }
 // device APIs are available
 function onDeviceReady() {
+    document.addEventListener("offline", onOffline, false);
+
     // Handle results
+    getServer();
     artyom = new Artyom();
-    initAmplitude();
     // Verify if recognition is available
     window.plugins.speechRecognition.isRecognitionAvailable(function(available) {
         if (!available) {
@@ -227,9 +233,9 @@ function initMusicList() {
             }); // End of Each
             delete sound;
         }
-    }); //initMusicList End
+    });
 
-}
+} //initMusicList End
 
 function radio(){
 Amplitude.pause();
@@ -251,9 +257,7 @@ libVLCPlayer.play('rtsp://@'+currentIP+':5550/tele',{
 
 function talkNow(textToSay){
                     TTS.speak({text:textToSay,rate:0.8}).then(function () {
-                       // alert('success');
                     }, function (reason) {
-                        //alert(reason);
                     });
  }
 
@@ -280,14 +284,7 @@ function initAmplitudeList(result) {
         {
                      indexes: ['Hello', 'Hi'],
                      action: (i) => {
-                         talkNow("Hi, How are you ?");
-                     }
-        }
-,
-        {
-                     indexes: ['How are you ?', "What's up ?"],
-                     action: (i) => {
-                         talkNow("I'm fine thanks what about you ?");
+                         talkNow("Hi Dear !");
                      }
         },
         {
