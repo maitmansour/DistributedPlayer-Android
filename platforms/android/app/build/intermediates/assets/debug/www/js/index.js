@@ -2,7 +2,7 @@ var recongnition = 0;
 var cornerimage;
 var artyom;
 var currentIP;
-var metaserverAddress="http://192.168.1.59/metaserver/web/index.php/connections/getserver";
+var metaserverAddress="http://192.168.1.59/DistributedPlayer-Metaserver/web/index.php/connections/getserver";
 var queryUrl;
 var musicUrl;
 window.onkeydown = function(e) {
@@ -80,7 +80,7 @@ function startRecognition() {
                 console.log("Matched : " + option, result);
                 return;
             }else{
-                    talkNow("Sorry i didn't catch you, you can ask me questions like What time is it, or ask me for playing a song, for example Play Adele Hello !");
+                    talkNow("Sorry i didn't catch you !");
                  return;
              }
         });

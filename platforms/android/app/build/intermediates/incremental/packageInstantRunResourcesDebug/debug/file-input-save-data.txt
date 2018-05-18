@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu May 17 21:04:28 CEST 2018
+#Fri May 18 12:56:23 CEST 2018
 5.base=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/assets/debug
 42.base=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/assets/debug
 32.set=ASSET
@@ -57,7 +57,7 @@
 53.set=ASSET
 39.file=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/assets/debug/www/img/tele.png
 6.base=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/assets/debug
-43.base=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
+43.base=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/assets/debug
 4.set=ANDROID_RESOURCE
 42.set=ASSET
 15.file=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/assets/debug/www/offline.html
@@ -112,7 +112,7 @@ count=73
 60.base=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/assets/debug
 7.base=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
 19.set=ANDROID_RESOURCE
-44.base=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/assets/debug
+44.base=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
 52.set=ASSET
 16.file=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/assets/debug/www/cordova-js-src/exec.js
 54.base=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/assets/debug
@@ -136,7 +136,7 @@ count=73
 28.base=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/assets/debug
 6.file=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/assets/debug/www/img/microphone-0.png
 10.base=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
-43.file=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-port-xxhdpi-v4/screen.png
+43.file=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/assets/debug/www/plugins/cordova-plugin-libvlc/www/libVLCPlayer.js
 26.set=ASSET
 38.base=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/assets/debug
 53.file=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/assets/debug/www/img/small-pause.svg
@@ -152,7 +152,7 @@ count=73
 6.set=ASSET
 17.file=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/assets/debug/www/img/previous-hover.svg
 0.base=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/assets/debug
-44.set=ASSET
+44.set=ANDROID_RESOURCE
 27.file=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/assets/debug/www/plugins/cordova-plugin-network-information/www/Connection.js
 65.base=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/assets/debug
 33.set=ASSET
@@ -195,7 +195,7 @@ count=73
 29.base=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
 7.file=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/mipmap-mdpi-v4/icon.png
 11.base=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
-44.file=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/assets/debug/www/plugins/cordova-plugin-libvlc/www/libVLCPlayer.js
+44.file=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-port-xxhdpi-v4/screen.png
 36.set=ASSET
 39.base=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/assets/debug
 54.file=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/assets/debug/www/img/play.svg
@@ -219,4 +219,4 @@ count=73
 10.file=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/drawable-xxhdpi-v4/background.9.png
 5.set=ASSET
 38.file=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/assets/debug/www/js/index.js
-43.set=ANDROID_RESOURCE
+43.set=ASSET

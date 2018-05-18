@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu May 17 21:05:08 CEST 2018
+#Fri May 18 12:56:43 CEST 2018
 60.set=ASSET
 52.set=NATIVE_RESOURCE
 53.base=/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/assets/debug
