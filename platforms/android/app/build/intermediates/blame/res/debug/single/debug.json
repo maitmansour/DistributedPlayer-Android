@@ -4,20 +4,20 @@
         "source": "/var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/res/drawable-port-xxhdpi/screen.png"
     },
     {
-        "merged": "/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-mdpi_screen.png.flat",
-        "source": "/var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/res/drawable-land-mdpi/screen.png"
-    },
-    {
         "merged": "/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_background.9.png.flat",
         "source": "/var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/res/drawable-xxxhdpi/background.9.png"
     },
     {
-        "merged": "/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-hdpi_screen.png.flat",
-        "source": "/var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/res/drawable-land-hdpi/screen.png"
+        "merged": "/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-mdpi_screen.png.flat",
+        "source": "/var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/res/drawable-land-mdpi/screen.png"
     },
     {
         "merged": "/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_play_arrow_white_24dp.png.flat",
         "source": "/var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/res/drawable-hdpi/ic_play_arrow_white_24dp.png"
+    },
+    {
+        "merged": "/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-hdpi_screen.png.flat",
+        "source": "/var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/res/drawable-land-hdpi/screen.png"
     },
     {
         "merged": "/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/res/merged/debug/mipmap-hdpi_icon.png.flat",
@@ -52,12 +52,12 @@
         "source": "/var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/res/drawable-xxhdpi/background.9.png"
     },
     {
-        "merged": "/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/res/merged/debug/drawable-hdpi_btn_playback_pause.png.flat",
-        "source": "/var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/res/drawable-hdpi/btn_playback_pause.png"
-    },
-    {
         "merged": "/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_background.9.png.flat",
         "source": "/var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/res/drawable-xhdpi/background.9.png"
+    },
+    {
+        "merged": "/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/res/merged/debug/drawable-hdpi_btn_playback_pause.png.flat",
+        "source": "/var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/res/drawable-hdpi/btn_playback_pause.png"
     },
     {
         "merged": "/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/res/merged/debug/drawable-hdpi_background.9.png.flat",
@@ -140,12 +140,12 @@
         "source": "/var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/res/drawable-port-mdpi/screen.png"
     },
     {
-        "merged": "/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/res/merged/debug/drawable-port-xhdpi_screen.png.flat",
-        "source": "/var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/res/drawable-port-xhdpi/screen.png"
-    },
-    {
         "merged": "/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_pause_white_24dp.png.flat",
         "source": "/var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/res/drawable-xxxhdpi/ic_pause_white_24dp.png"
+    },
+    {
+        "merged": "/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/res/merged/debug/drawable-port-xhdpi_screen.png.flat",
+        "source": "/var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/res/drawable-port-xhdpi/screen.png"
     },
     {
         "merged": "/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/res/merged/debug/drawable-port-xxxhdpi_screen.png.flat",
@@ -160,16 +160,16 @@
         "source": "/var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/res/drawable-xxhdpi/ic_pause_white_24dp.png"
     },
     {
+        "merged": "/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/res/merged/debug/mipmap-mdpi_icon.png.flat",
+        "source": "/var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/res/mipmap-mdpi/icon.png"
+    },
+    {
         "merged": "/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/res/merged/debug/drawable-mdpi_appicon.png.flat",
         "source": "/var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/res/drawable-mdpi/appicon.png"
     },
     {
         "merged": "/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_appicon.png.flat",
         "source": "/var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/res/drawable-xxhdpi/appicon.png"
-    },
-    {
-        "merged": "/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/res/merged/debug/mipmap-mdpi_icon.png.flat",
-        "source": "/var/www/html/DistributedPlayer-Android/platforms/android/app/src/main/res/mipmap-mdpi/icon.png"
     },
     {
         "merged": "/var/www/html/DistributedPlayer-Android/platforms/android/app/build/intermediates/res/merged/debug/xml_config.xml.flat",

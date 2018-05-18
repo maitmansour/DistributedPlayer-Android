@@ -29,4 +29,5 @@
     <plugin name="cordova-plugin-libvlc" spec="https://github.com/disono/cordova-plugin-libVLC" />
     <plugin name="cordova-plugin-tts" spec="^0.2.3" />
     <plugin name="cordova-plugin-network-information" spec="^2.0.1" />
+    <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
 </widget>

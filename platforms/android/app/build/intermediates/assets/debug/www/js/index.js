@@ -33,9 +33,15 @@ function getServer() {
 }
 
 function onOffline(){
+        if (navigator && navigator.splashscreen) {
+          navigator.splashscreen.hide();
+        }
 window.location="file:///android_asset/www/offline.html";
 }
 function onDownTime(){
+        if (navigator && navigator.splashscreen) {
+          navigator.splashscreen.hide();
+        }
 window.location="file:///android_asset/www/downtime.html";
 }
 // device APIs are available
@@ -70,7 +76,6 @@ function onDeviceReady() {
     }, function(err) {
         console.log(err);
     });
-
 }
 
 function startRecognition() {
@@ -237,7 +242,9 @@ function initMusicList() {
             delete sound;
         }
     });
-
+        if (navigator && navigator.splashscreen) {
+          navigator.splashscreen.hide();
+        }
 } //initMusicList End
 
 function radio(){
