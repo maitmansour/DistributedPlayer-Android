@@ -24,12 +24,7 @@
 
 ![Video Streaming](https://i.imgur.com/Psh34cv.png)
 
-## How to get .JAR from Netbeans
-- Clean and Build
-- Go to dist Folder (On Project Repository)
-- You will find the JAR file there !
-
-## How to use
-- Import project to Netbeans
-- Build and clean
-- Run and enjoy !
+## How to get install App
+- Clone Project
+- Import the project into Android Studio
+- Build and Install
