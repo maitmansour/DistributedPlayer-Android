@@ -2,7 +2,7 @@
 # DistributedPlayer-Android
 
 ## Author
-- AIT MANSOUR Mohamed <contact@numidea.com>.
+- AIT MANSOUR Mohamed.
 
 ## Functionalities
 - [x] Voice commands (Stop, Play...)
